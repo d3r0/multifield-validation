@@ -1,0 +1,32 @@
+{
+    "name": "boyens-online/multifield-validation",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Marcel Arndt",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "BoyensOnline\\MultifieldValidation\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BoyensOnline\\MultifieldValidation\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/multifield-validation": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "multifield_validation"
+        }
+    }
+}

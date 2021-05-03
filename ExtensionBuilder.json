@@ -1,0 +1,40 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 10.4.0-10.4.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "10.4.0-10.4.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "multifield_validation",
+        "name": "pm-multi-field-validation",
+        "originalExtensionKey": "multifield_validation",
+        "originalVendorName": "BoyensOnline",
+        "persons": [
+            {
+                "company": "Boyens Online",
+                "email": "marcel.arndt@boyens-medien.de",
+                "name": "Marcel Arndt",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "BoyensOnline"
+    },
+    "wires": [],
+    "storagePath": "\/var\/www\/html\/packages\/",
+    "log": {
+        "last_modified": "2021-05-03 06:17",
+        "extension_builder_version": "9.11.0",
+        "be_user": " (1)"
+    }
+}

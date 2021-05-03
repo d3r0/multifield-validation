@@ -1,0 +1,46 @@
+# Add own Partials
+plugin.tx_powermail.view {
+    partialRootPaths {
+        1 = EXT:multifield_validation/Resources/Private/Partials/
+    }
+}
+# Add new Field Properties
+config.tx_extbase{
+    persistence{
+        classes{
+            In2code\Powermail\Domain\Model\Form {
+                subclasses {
+                    0 = BoyensOnline\MultifieldValidation\Domain\Model\Form
+                }
+            }
+            In2code\Powermail\Domain\Model\Page {
+                subclasses {
+                    0 = BoyensOnline\MultifieldValidation\Domain\Model\Page
+                }
+            }
+            In2code\Powermail\Domain\Model\Field {
+                subclasses {
+                    0 = BoyensOnline\MultifieldValidation\Domain\Model\Field
+                }
+            }
+            BoyensOnline\MultifieldValidation\Domain\Model\Form {
+                mapping {
+                    tableName = tx_powermail_domain_model_form
+                }
+            }
+            BoyensOnline\MultifieldValidation\Domain\Model\Page {
+                mapping {
+                    tableName = tx_powermail_domain_model_page
+                }
+            }
+            BoyensOnline\MultifieldValidation\Domain\Model\Field {
+                mapping {
+                    tableName = tx_powermail_domain_model_field
+                }
+            }
+        }
+    }
+    objects {
+        In2code\Powermail\Domain\Repository\FormRepository.className = BoyensOnline\MultifieldValidation\Domain\Repository\FormRepository
+    }
+}
