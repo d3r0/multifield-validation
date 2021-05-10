@@ -14,6 +14,13 @@ class Field extends \In2code\Powermail\Domain\Model\Field
      * @var string $txMultifieldValidationPowermailText
      */
     protected $txMultifieldValidationPowermailText;
+    /**
+     * New property text
+     *
+     * @var string $txMultifieldValidationPowermailText
+     */
+    protected $groupname;
+
 
     /**
      * @param string $txMultifieldValidationPowermailText
@@ -30,6 +37,23 @@ class Field extends \In2code\Powermail\Domain\Model\Field
     public function getTxMultifieldValidationPowermailText()
     {
         return $this->txMultifieldValidationPowermailText;
+    }
+
+    /**
+     * @param string $groupname
+     * @return void
+     */
+    public function setGroupname($groupname)
+    {
+        $this->groupname = $groupname;
+    }
+
+    /**
+     * @return string
+     */
+    public function getGroupname()
+    {
+        return $this->groupname;
     }
 }
 
