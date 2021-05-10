@@ -5,12 +5,17 @@ const queryAll = (domFilter) => [...document.querySelectorAll(domFilter)];
 window.onload = init;
 
 function init() {
-  const multifieldInputEls = queryAll("[data-multifield]");
+  const multifieldInputEls = queryAll(".js-multifield");
   const groups = unique(
-    multifieldInputEls.map((el) => el.getAttribute("data-multifield-group"))
+    multifieldInputEls.map((el) =>
+      [...el.classList]
+        .filter((elClass) => elClass.indexOf("js-multifield-group-") > -1)
+        .map((elClass) => elClass.replace("js-multifield-group-", ""))[0]
+    )
   );
+
   groups.forEach((groupKey) =>
-    addInputEventListener(queryAll(`[data-multifield-group="${groupKey}"]`))
+    addInputEventListener(queryAll(`.js-multifield-group-${groupKey}`))
   );
 }
 
