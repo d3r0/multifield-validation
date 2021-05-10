@@ -12,11 +12,11 @@ call_user_func(static function () {
     $tempColums = array(
         'tx_multifield_validation_powermail_text' => array(
             'exclude' => 1,
-            'label' => 'Field group key',
+            'label' => 'Gruppenname',
             'config' => array(
                 'type' => 'text',
-                'cols' => '32',
-                'rows' => 2
+                'cols' => '20',
+                'rows' => 1
             )
         ),
     );

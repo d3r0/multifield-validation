@@ -4,6 +4,9 @@ plugin.tx_powermail.view {
         1 = EXT:multifield_validation/Resources/Private/Partials/
     }
 }
+# Add Validation
+page.includeJSFooter.multifieldValidation = EXT:multifield_validation/Resources/Public/JavaScripts/multi-field-validation.js
+
 # Add new Field Properties
 config.tx_extbase{
     persistence{

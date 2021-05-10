@@ -16,30 +16,6 @@ class Field extends \In2code\Powermail\Domain\Model\Field
     protected $txMultifieldValidationPowermailText;
 
     /**
-     * New property readonly
-     *
-     * @var string $txMultifieldValidationPowermailReadonly
-     */
-    // protected $txMultifieldValidationPowermailReadonly;
-
-    // /**
-    //  * @param string $txMultifieldValidationPowermailReadonly
-    //  * @return void
-    //  */
-    // public function setTxMultifieldValidationPowermailReadonly($txMultifieldValidationPowermailReadonly)
-    // {
-    //     $this->txMultifieldValidationPowermailReadonly = $txMultifieldValidationPowermailReadonly;
-    // }
-
-    // /**
-    //  * @return string
-    //  */
-    // public function getTxMultifieldValidationPowermailReadonly()
-    // {
-    //     return $this->txMultifieldValidationPowermailReadonly;
-    // }
-
-    /**
      * @param string $txMultifieldValidationPowermailText
      * @return void
      */
