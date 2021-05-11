@@ -1,59 +1,34 @@
 <?php
+
 namespace BoyensOnline\MultifieldValidation\Domain\Model;
 
 /**
-* Class Field
-* @package BoyensOnline\MultifieldValidation\Domain\Model
-*/
+ * Class Field
+ * @package BoyensOnline\MultifieldValidation\Domain\Model
+ */
 class Field extends \In2code\Powermail\Domain\Model\Field
 {
-
     /**
-     * New property text
+     * Groupname used for multi-field validation
      *
-     * @var string $txMultifieldValidationPowermailText
+     * @var string $multiGroupname
      */
-    protected $txMultifieldValidationPowermailText;
-    /**
-     * New property text
-     *
-     * @var string $txMultifieldValidationPowermailText
-     */
-    protected $groupname;
-
-
-    /**
-     * @param string $txMultifieldValidationPowermailText
-     * @return void
-     */
-    public function setTxMultifieldValidationPowermailText($txMultifieldValidationPowermailText)
-    {
-        $this->txMultifieldValidationPowermailText = $txMultifieldValidationPowermailText;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTxMultifieldValidationPowermailText()
-    {
-        return $this->txMultifieldValidationPowermailText;
-    }
+    protected $multiGroupname;
 
     /**
      * @param string $groupname
      * @return void
      */
-    public function setGroupname($groupname)
+    public function setMultiGroupname($groupname)
     {
-        $this->groupname = $groupname;
+        $this->multiGroupname = $groupname;
     }
 
     /**
      * @return string
      */
-    public function getGroupname()
+    public function getMultiGroupname()
     {
-        return $this->groupname;
+        return $this->multiGroupname;
     }
 }
-

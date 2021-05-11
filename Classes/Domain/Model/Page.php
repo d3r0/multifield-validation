@@ -1,12 +1,13 @@
 <?php
+
 namespace BoyensOnline\MultifieldValidation\Domain\Model;
 
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
-* Class Page
-* @package BoyensOnline\MultifieldValidation\Domain\Model
-*/
+ * Class Page
+ * @package BoyensOnline\MultifieldValidation\Domain\Model
+ */
 class Page extends \In2code\Powermail\Domain\Model\Page
 {
 

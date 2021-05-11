@@ -10,16 +10,7 @@ call_user_func(static function () {
     );
     
     $tempColums = array(
-        'tx_multifield_validation_powermail_text' => array(
-            'exclude' => 1,
-            'label' => 'Gruppenname',
-            'config' => array(
-                'type' => 'text',
-                'cols' => '20',
-                'rows' => 1
-            )
-        ),
-        'groupname' => array(
+        'multi_groupname' => array(
             'exclude' => 1,
             'label' => 'Multi-Field Validation Gruppenname',
             'config' => [
@@ -37,7 +28,7 @@ call_user_func(static function () {
     
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'tx_powermail_domain_model_field',
-        '--div--;Multi-Field Validation, tx_multifield_validation_powermail_text, groupname',
+        '--div--;Multi-Field Validation, multi_groupname',
         '',
         'after:own_marker_select'
     );

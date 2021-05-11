@@ -3,7 +3,7 @@
 
 <div class="powermail_fieldwrap powermail_fieldwrap_type_input powermail_fieldwrap_{field.marker} {field.css} {settings.styles.framework.fieldAndLabelWrappingClasses}">
 	<f:render partial="Form/FieldLabel" arguments="{_all}" />
-    <f:if condition="{!field.txMultifieldValidationPowermailText}">
+    <f:if condition="{field.multiGroupname}">
         <f:then>
             <div class="{settings.styles.framework.fieldWrappingClasses}">
                 <f:form.textfield
@@ -11,10 +11,10 @@
                         property="{field.marker}"
                         placeholder="{field.placeholder}"
                         value="{vh:misc.prefillField(field:field, mail:mail)}"
-                        class="powermail_input {settings.styles.framework.fieldClasses} {vh:validation.errorClass(field:field, class:'powermail_field_error')}"
+                        class="test powermail_input {settings.styles.framework.fieldClasses} {vh:validation.errorClass(field:field, class:'powermail_field_error')} js-multifield js-multifield-group-{field.multiGroupname}"
                         additionalAttributes="{vh:validation.validationDataAttribute(field:field)}"
                         id="powermail_field_{field.marker}" />
-            </div>
+            </div>  
         </f:then>
         <f:else>
             <div class="{settings.styles.framework.fieldWrappingClasses}">
@@ -23,10 +23,10 @@
                         property="{field.marker}"
                         placeholder="{field.placeholder}"
                         value="{vh:misc.prefillField(field:field, mail:mail)}"
-                        class="powermail_input {settings.styles.framework.fieldClasses} {vh:validation.errorClass(field:field, class:'powermail_field_error')} js-multifield js-multifield-group-{field.txMultifieldValidationPowermailText}"
-                        additionalAttributes="{vh:validation.validationDataAttribute(field:field)} "
+                        class="test powermail_input {settings.styles.framework.fieldClasses} {vh:validation.errorClass(field:field, class:'powermail_field_error')}"
+                        additionalAttributes="{vh:validation.validationDataAttribute(field:field)}"
                         id="powermail_field_{field.marker}" />
-            </div>            
+            </div>          
         </f:else>
     </f:if>
 </div>
